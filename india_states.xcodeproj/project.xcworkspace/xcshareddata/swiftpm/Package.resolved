@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect.git",
+        "state": {
+          "branch": null,
+          "revision": "2e09be8af614401bc9f87d40093ec19ce56ccaf2",
+          "version": "0.1.3"
+        }
+      },
+      {
+        "package": "WikipediaKit",
+        "repositoryURL": "https://github.com/Raureif/WikipediaKit",
+        "state": {
+          "branch": null,
+          "revision": "be13ff505b88b3e2161c4f187fc4a5a2a1af4ba4",
+          "version": "3.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
