@@ -5,6 +5,8 @@
 //  Created by Nate Brown on 7/15/21.
 //
 
+/// https://stackoverflow.com/questions/64778379/how-to-use-geometry-reader-so-that-the-view-does-not-expand
+
 import SwiftUI
 
 struct SingleAxisGeometryReader<Content: View>: View {

@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F2AF95926A09A2D00470F84 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF95826A09A2D00470F84 /* Colors.swift */; };
+		4F233A9D26AE55290046FD91 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4F233A9C26AE55290046FD91 /* correct.wav */; };
+		4F233A9F26AE555E0046FD91 /* finish.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4F233A9E26AE555E0046FD91 /* finish.wav */; };
+		4F233AA126AE55820046FD91 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AA026AE55820046FD91 /* SoundPlayer.swift */; };
+		4F233AA926AE644E0046FD91 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AA826AE644E0046FD91 /* TimeView.swift */; };
+		4F233AAB26AE65580046FD91 /* GameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AAA26AE65580046FD91 /* GameTime.swift */; };
+		4F233AB226AE67DC0046FD91 /* IndiaLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AB126AE67DC0046FD91 /* IndiaLanguage.swift */; };
+		4F233AB626AE69050046FD91 /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AB526AE69050046FD91 /* StateData.swift */; };
+		4F233AB826AE690C0046FD91 /* InImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AB726AE690C0046FD91 /* InImage.swift */; };
+		4F233ABA26AE69170046FD91 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AB926AE69170046FD91 /* License.swift */; };
+		4F233ABC26AE6A4E0046FD91 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233ABB26AE6A4E0046FD91 /* States.swift */; };
+		4F233ABE26AE6B270046FD91 /* DoneBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233ABD26AE6B270046FD91 /* DoneBar.swift */; };
+		4F233AC226AE6D040046FD91 /* DarkBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AC126AE6D040046FD91 /* DarkBackground.swift */; };
+		4F233AC426AE70330046FD91 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AC326AE70330046FD91 /* String.swift */; };
+		4F2AF95926A09A2D00470F84 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF95826A09A2D00470F84 /* Color.swift */; };
 		4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF95D26A0A6F400470F84 /* Game.swift */; };
 		4F2AF96126A0AD0800470F84 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2AF96026A0AD0800470F84 /* Introspect */; };
 		4F2AF96326A0B1BB00470F84 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96226A0B1BB00470F84 /* Success.swift */; };
@@ -24,7 +37,10 @@
 		4F4F2BEB26A2581E00B336A2 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEA26A2581E00B336A2 /* Notes */; };
 		4F4F2BEE26A328A300B336A2 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F4F2BED26A328A300B336A2 /* WikipediaKit */; };
 		4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEF26A3384B00B336A2 /* States.xcassets */; };
+		4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5292FB26AF05DD00AD6C8A /* Settings.swift */; };
+		4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5292FE26AF0C5400AD6C8A /* ScreenCorners */; };
 		4F6D09E4269FC4C3008BEA2A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D09E3269FC4C3008BEA2A /* WebView.swift */; };
+		4FA374D826AF54250019D079 /* OverflowScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA374D726AF54250019D079 /* OverflowScroll.swift */; };
 		4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E97269F74C40006C798 /* india_statesApp.swift */; };
 		4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E99269F74C40006C798 /* ContentView.swift */; };
 		4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9B269F74C60006C798 /* Assets.xcassets */; };
@@ -32,7 +48,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F2AF95826A09A2D00470F84 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4F233A9C26AE55290046FD91 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		4F233A9E26AE555E0046FD91 /* finish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finish.wav; sourceTree = "<group>"; };
+		4F233AA026AE55820046FD91 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		4F233AA826AE644E0046FD91 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		4F233AAA26AE65580046FD91 /* GameTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTime.swift; sourceTree = "<group>"; };
+		4F233AB126AE67DC0046FD91 /* IndiaLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndiaLanguage.swift; sourceTree = "<group>"; };
+		4F233AB526AE69050046FD91 /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
+		4F233AB726AE690C0046FD91 /* InImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InImage.swift; sourceTree = "<group>"; };
+		4F233AB926AE69170046FD91 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		4F233ABB26AE6A4E0046FD91 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		4F233ABD26AE6B270046FD91 /* DoneBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneBar.swift; sourceTree = "<group>"; };
+		4F233AC126AE6D040046FD91 /* DarkBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkBackground.swift; sourceTree = "<group>"; };
+		4F233AC326AE70330046FD91 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4F2AF95826A09A2D00470F84 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4F2AF95D26A0A6F400470F84 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4F2AF96226A0B1BB00470F84 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
 		4F2AF96426A0BB6400470F84 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
@@ -47,7 +76,9 @@
 		4F355AE126A09311009126EA /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		4F4F2BEA26A2581E00B336A2 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4F4F2BEF26A3384B00B336A2 /* States.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = States.xcassets; sourceTree = "<group>"; };
+		4F5292FB26AF05DD00AD6C8A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4F6D09E3269FC4C3008BEA2A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4FA374D726AF54250019D079 /* OverflowScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowScroll.swift; sourceTree = "<group>"; };
 		4FD60E94269F74C40006C798 /* india_states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = india_states.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD60E97269F74C40006C798 /* india_statesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = india_statesApp.swift; sourceTree = "<group>"; };
 		4FD60E99269F74C40006C798 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */,
 				4F2AF96126A0AD0800470F84 /* Introspect in Frameworks */,
 				4F4F2BEE26A328A300B336A2 /* WikipediaKit in Frameworks */,
 			);
@@ -69,12 +101,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F233A9926AE53ED0046FD91 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4F233A9E26AE555E0046FD91 /* finish.wav */,
+				4F233A9C26AE55290046FD91 /* correct.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4F233AA226AE61B60046FD91 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF96426A0BB6400470F84 /* Entry.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		4F233AA426AE61D30046FD91 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF95D26A0A6F400470F84 /* Game.swift */,
+				4F233AA826AE644E0046FD91 /* TimeView.swift */,
+				4F355AE126A09311009126EA /* Answer.swift */,
+				4F6D09E3269FC4C3008BEA2A /* WebView.swift */,
+				4F2AF96226A0B1BB00470F84 /* Success.swift */,
+				4F2AF96626A11A8D00470F84 /* Done.swift */,
+				4F233ABD26AE6B270046FD91 /* DoneBar.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		4F233AA526AE61F30046FD91 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF96C26A2269F00470F84 /* Stats.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		4F233AA626AE62130046FD91 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF96826A11D0A00470F84 /* SingleAxisGeometryReader.swift */,
+				4F2AF97126A2439D00470F84 /* PlayerView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4F233AAF26AE67AF0046FD91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF95826A09A2D00470F84 /* Color.swift */,
+				4F233AC326AE70330046FD91 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F233AB026AE67C80046FD91 /* Enums_Options */ = {
+			isa = PBXGroup;
+			children = (
+				4F233ABB26AE6A4E0046FD91 /* States.swift */,
+				4F2AF96A26A2229200470F84 /* SettingsKey.swift */,
+				4F233AB126AE67DC0046FD91 /* IndiaLanguage.swift */,
+				4F233AB526AE69050046FD91 /* StateData.swift */,
+				4F233AB726AE690C0046FD91 /* InImage.swift */,
+				4F233AB926AE69170046FD91 /* License.swift */,
+			);
+			path = Enums_Options;
+			sourceTree = "<group>";
+		};
+		4F233AB326AE685D0046FD91 /* OOs */ = {
+			isa = PBXGroup;
+			children = (
+				4F233AAA26AE65580046FD91 /* GameTime.swift */,
+			);
+			path = OOs;
+			sourceTree = "<group>";
+		};
+		4F233AB426AE687E0046FD91 /* Struct_Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F355ADD269FC8B7009126EA /* InState.swift */,
+				4F233AA026AE55820046FD91 /* SoundPlayer.swift */,
+			);
+			path = Struct_Classes;
+			sourceTree = "<group>";
+		};
+		4F233AC026AE6CE30046FD91 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4F233AC126AE6D040046FD91 /* DarkBackground.swift */,
+				4FA374D726AF54250019D079 /* OverflowScroll.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		4F2AF95726A09A1C00470F84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4F2AF95826A09A2D00470F84 /* Colors.swift */,
-				4F355ADD269FC8B7009126EA /* InState.swift */,
-				4F2AF96A26A2229200470F84 /* SettingsKey.swift */,
+				4F233AAF26AE67AF0046FD91 /* Extensions */,
+				4F233AB026AE67C80046FD91 /* Enums_Options */,
+				4F233AB426AE687E0046FD91 /* Struct_Classes */,
+				4F233AB326AE685D0046FD91 /* OOs */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,15 +213,12 @@
 			children = (
 				4FD60E97269F74C40006C798 /* india_statesApp.swift */,
 				4FD60E99269F74C40006C798 /* ContentView.swift */,
-				4F2AF96426A0BB6400470F84 /* Entry.swift */,
-				4F2AF95D26A0A6F400470F84 /* Game.swift */,
-				4F2AF96226A0B1BB00470F84 /* Success.swift */,
-				4F6D09E3269FC4C3008BEA2A /* WebView.swift */,
-				4F2AF96626A11A8D00470F84 /* Done.swift */,
-				4F355AE126A09311009126EA /* Answer.swift */,
-				4F2AF96826A11D0A00470F84 /* SingleAxisGeometryReader.swift */,
-				4F2AF96C26A2269F00470F84 /* Stats.swift */,
-				4F2AF97126A2439D00470F84 /* PlayerView.swift */,
+				4F233AA226AE61B60046FD91 /* Entry */,
+				4F233AA426AE61D30046FD91 /* Game */,
+				4F233AA526AE61F30046FD91 /* Stats */,
+				4F5292FA26AF05CD00AD6C8A /* Settings */,
+				4F233AA626AE62130046FD91 /* Helper */,
+				4F233AC026AE6CE30046FD91 /* Modifiers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,6 +226,7 @@
 		4F2AF95B26A09B3000470F84 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F233A9926AE53ED0046FD91 /* Sounds */,
 				4F2AF96E26A23FF300470F84 /* Videos */,
 				4F2AF95C26A09B6500470F84 /* HTML */,
 				4FD60E9B269F74C60006C798 /* Assets.xcassets */,
@@ -122,6 +249,14 @@
 				4F2AF96F26A23FF300470F84 /* india_montage.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		4F5292FA26AF05CD00AD6C8A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4F5292FB26AF05DD00AD6C8A /* Settings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		4FD60E8B269F74C40006C798 = {
@@ -180,6 +315,7 @@
 			packageProductDependencies = (
 				4F2AF96026A0AD0800470F84 /* Introspect */,
 				4F4F2BED26A328A300B336A2 /* WikipediaKit */,
+				4F5292FE26AF0C5400AD6C8A /* ScreenCorners */,
 			);
 			productName = india_states;
 			productReference = 4FD60E94269F74C40006C798 /* india_states.app */;
@@ -211,6 +347,7 @@
 			packageReferences = (
 				4F2AF95F26A0AD0800470F84 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				4F4F2BEC26A328A300B336A2 /* XCRemoteSwiftPackageReference "WikipediaKit" */,
+				4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */,
 			);
 			productRefGroup = 4FD60E95269F74C40006C798 /* Products */;
 			projectDirPath = "";
@@ -226,12 +363,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F233A9D26AE55290046FD91 /* correct.wav in Resources */,
 				4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */,
 				4F4F2BEB26A2581E00B336A2 /* Notes in Resources */,
 				4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */,
 				4F355AE0269FDE07009126EA /* india.html in Resources */,
 				4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */,
 				4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */,
+				4F233A9F26AE555E0046FD91 /* finish.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,16 +381,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F233AAB26AE65580046FD91 /* GameTime.swift in Sources */,
+				4F233AC226AE6D040046FD91 /* DarkBackground.swift in Sources */,
+				4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */,
+				4FA374D826AF54250019D079 /* OverflowScroll.swift in Sources */,
 				4F6D09E4269FC4C3008BEA2A /* WebView.swift in Sources */,
 				4F2AF96D26A2269F00470F84 /* Stats.swift in Sources */,
-				4F2AF95926A09A2D00470F84 /* Colors.swift in Sources */,
+				4F233AB626AE69050046FD91 /* StateData.swift in Sources */,
+				4F2AF95926A09A2D00470F84 /* Color.swift in Sources */,
+				4F233AA926AE644E0046FD91 /* TimeView.swift in Sources */,
 				4F2AF96326A0B1BB00470F84 /* Success.swift in Sources */,
+				4F233ABC26AE6A4E0046FD91 /* States.swift in Sources */,
 				4F2AF96726A11A8D00470F84 /* Done.swift in Sources */,
 				4F2AF96926A11D0A00470F84 /* SingleAxisGeometryReader.swift in Sources */,
 				4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */,
 				4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */,
 				4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */,
+				4F233AB226AE67DC0046FD91 /* IndiaLanguage.swift in Sources */,
 				4F2AF97226A2439D00470F84 /* PlayerView.swift in Sources */,
+				4F233ABA26AE69170046FD91 /* License.swift in Sources */,
+				4F233AC426AE70330046FD91 /* String.swift in Sources */,
+				4F233ABE26AE6B270046FD91 /* DoneBar.swift in Sources */,
+				4F233AB826AE690C0046FD91 /* InImage.swift in Sources */,
+				4F233AA126AE55820046FD91 /* SoundPlayer.swift in Sources */,
 				4F2AF96526A0BB6400470F84 /* Entry.swift in Sources */,
 				4F355ADE269FC8B7009126EA /* InState.swift in Sources */,
 				4F2AF96B26A2229200470F84 /* SettingsKey.swift in Sources */,
@@ -462,6 +614,14 @@
 				minimumVersion = 3.0.3;
 			};
 		};
+		4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylebshr/ScreenCorners";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -474,6 +634,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F4F2BEC26A328A300B336A2 /* XCRemoteSwiftPackageReference "WikipediaKit" */;
 			productName = WikipediaKit;
+		};
+		4F5292FE26AF0C5400AD6C8A /* ScreenCorners */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */;
+			productName = ScreenCorners;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

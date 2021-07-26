@@ -54,15 +54,30 @@ func getStatePercents() -> [StatePercent] {
   return statePercents.sorted(by: { $0.percent > $1.percent } )
 }
 
+func getTotalPercent() -> Int {
+  let stateData = loadStateData()
+  if stateData.count == 0 {
+    return 0
+  }
+  var totalCorrect = 0
+  var totalWrong = 0
+  for state in stateData {
+    totalCorrect += state.correct
+    totalWrong += state.incorrect
+  }
+  let ratio = Double(totalCorrect) / Double((totalCorrect + totalWrong))
+  let percent = ratio * 100
+  return Int(percent.rounded())
+}
+
 struct Stats: View {
   @State var statePercents = getStatePercents()
   @State var time = loadTime()
-  
-  init() {
-    UINavigationBar.appearance().tintColor = .white
-  }
+  var testing = false
   
   var body: some View {
+    let totalPercent = String("\(getTotalPercent())%")
+    let timeString = getTimeString(startTime: Date(), endTime: Date().addingTimeInterval(Double(time)))
     
     GeometryReader { geo in
       ScrollView(showsIndicators: false) {
@@ -82,33 +97,37 @@ struct Stats: View {
               .font(.largeTitle)
               .bold()
               .padding(.bottom)
-            HStack {
-              Text("\(Image(systemName: "clock")) Best Time:")
-                .bold()
-              Spacer()
-              Text(getTimeString(startTime: Date(), endTime: Date().addingTimeInterval(Double(time))))
-            }
+            Element(
+              text: Text("\(Image(systemName: "clock")) Best Time:"),
+              result: timeString)
 
             Text("States")
               .font(.title)
               .bold()
               .padding(.top)
-            VStack(spacing: 10) {
-              ForEach(statePercents, id: \.self) { statePercent in
-                HStack {
-                  Text(statePercent.name)
-                    .font(.headline)
-                  Spacer()
-                  Text("\(statePercent.percent)%")
+            Divider()
+            ScrollView {
+              VStack(spacing: 10) {
+                ForEach(statePercents, id: \.self) { statePercent in
+                  HStack {
+                    Text(statePercent.name)
+                      .font(.headline)
+                    Spacer()
+                    Text("\(statePercent.percent)%")
+                  }
                 }
               }
+              .padding()
             }
-            .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [Color.darkPurple.opacity(0.1), Color.clear]), startPoint: .top, endPoint: .bottom).cornerRadius(20))
+            .frame(maxHeight: 400)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.darkPurple.opacity(0.1), Color.lightPurple.opacity(0.5)]), startPoint: .top, endPoint: .bottom).cornerRadius(20))
+            .shadow(radius: 4)
+            Element(text: Text("Total"), result: totalPercent)
+              .padding(.horizontal)
             Spacer()
           }
         }
-        .padding(.top, UIApplication.shared.windows.first!.safeAreaInsets.top )
+        .padding(.top, testing ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top )
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .frame(minHeight: geo.size.height)
       }
@@ -121,12 +140,27 @@ struct Stats: View {
     .onAppear {
       statePercents = getStatePercents()
       time = loadTime()
+      UINavigationBar.appearance().tintColor = .white
+    }
+  }
+}
+
+fileprivate struct Element: View {
+  var text: Text
+  var result: String
+  
+  var body: some View {
+    HStack {
+      text
+        .bold()
+      Spacer()
+      Text(result)
     }
   }
 }
 
 struct Stats_Previews: PreviewProvider {
   static var previews: some View {
-    Stats()
+    Stats(testing: true)
   }
 }

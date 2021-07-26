@@ -8,46 +8,8 @@
 import SwiftUI
 import Introspect
 
-func generateStatesList() -> [InState] {
-  var states = STATES_UT
-  var returnStates: [InState] = []
-  for _ in 0 ..< 5 { // STATES_UT.count
-    let state = states.randomElement()!
-    states = states.filter { $0 != state }
-    returnStates.append(state)
-  }
-  return returnStates
-}
-
-func getTimeString(startTime: Date, endTime: Date) -> String {
-  let seconds = endTime.timeIntervalSince(startTime)
-  if seconds > 3600 {
-    return "59:59"
-  }
-  if seconds <= 0 {
-    return "0:00"
-  }
-  let minutes = Int(floor(seconds / 60))
-  let endSeconds = Int(Int(seconds) - (minutes * 60))
-  let secondsString = endSeconds < 10 ? "0\(endSeconds)" : String(endSeconds)
-  return "\(minutes):\(secondsString)"
-}
-
-class Time: ObservableObject {
-  @Published var time: Date = Date()
-  @Published var startTime: Date = Date()
-  
-  func resetTime() {
-    startTime = Date()
-    time = Date()
-  }
-  func timeString() -> String {
-    return getTimeString(startTime: startTime, endTime: time)
-  }
-}
-
 struct Game: View {
-  @State var stateCollection = generateStatesList()
+  @State var stateCollection = InState.generateStatesList(testing: true)
   @State var stateIndex = 0
   @State var currentState = STATES_UT[0]
   @State var showSuccess = false
@@ -112,6 +74,7 @@ struct Game: View {
               TabView(selection: $stateIndex) {
                 ForEach(Array(stateCollection.enumerated()), id: \.offset) { index, state in
                   Answer(state: state, tryList: $tryList, onSuccess: {
+                    SoundPlayer.shared.playSound(of: .correct)
                     withAnimation {
                       showSuccess = true
                     }
@@ -152,6 +115,7 @@ struct Game: View {
                         withAnimation {
                           successSelection = 1
                         }
+                        SoundPlayer.shared.playSound(of: .finish)
                       } else {
                         stateIndex += 1
                         showSuccess = false
@@ -166,6 +130,7 @@ struct Game: View {
                   Done(tryList: $tryList, onRestart: {
                     resetEverything()
                   }, onDone: {
+                    resetEverything()
                     presentationMode.wrappedValue.dismiss()
                   })
                 }
@@ -188,7 +153,7 @@ struct Game: View {
       time.resetTime()
     }
     .onDisappear {
-      resetEverything()
+      resetEverything(animated: false)
     }
     .onChange(of: stateIndex) { newIndex in
       currentState = stateCollection[newIndex]
@@ -209,44 +174,31 @@ struct Game: View {
     }
   }
   
-  func resetEverything() {
-    withAnimation(.easeInOut(duration: 0.5)) {
-      hideAnswers = true
-    }
-    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-      stateCollection = generateStatesList()
-      stateIndex = 0
-      currentState = stateCollection[0]
-      showSuccess = false
-      tryList = [0,0,0,0]
-      successSelection = 0
-      time.resetTime()
+  func resetEverything(animated: Bool = true) {
+    if animated {
+      withAnimation(.easeInOut(duration: 0.5)) {
+        hideAnswers = true
+      }
       DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-        withAnimation {
-          hideAnswers = false
+        resetCore()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+          withAnimation {
+            hideAnswers = false
+          }
         }
       }
+    } else {
+      resetCore()
     }
   }
-}
-
-struct TimeView: View {
-  @Binding var showSuccess: Bool
-  @State var startTime = Date()
-  //  @State var time = Date()
-  let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-  @EnvironmentObject var time: Time
-  
-  var body: some View {
-    Text(time.timeString())
-      .fontWeight(.black)
-      .font(.system(.title2, design: .monospaced))
-      //      .shadow(radius: 3)
-      .onReceive(timer) { _ in
-        if showSuccess != true {
-          time.time = time.time.addingTimeInterval(1)
-        }
-      }
+  func resetCore() {
+    stateCollection = InState.generateStatesList(testing: true)
+    stateIndex = 0
+    currentState = stateCollection[0]
+    showSuccess = false
+    tryList = [0,0,0,0]
+    successSelection = 0
+    time.resetTime()
   }
 }
 

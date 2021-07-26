@@ -10,4 +10,5 @@ import Foundation
 class SettingsKey {
   static let BEST_TIME = "best_time"
   static let STATE_DATA = "state_data"
+  static let SOUND_ON = "sound_on"
 }

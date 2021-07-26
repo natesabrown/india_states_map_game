@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Entry: View {
+  @State var showSettings = false
+  var testing = false
   
   var body: some View {
     GeometryReader { geo in
@@ -62,18 +64,39 @@ struct Entry: View {
             }
             Spacer()
           }
+          .frame(maxWidth: .infinity)
         }
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea([.top, .bottom])
+        .overlay(
+          VStack {
+          HStack {
+            Spacer()
+              Button(action: {
+                showSettings = true
+              }) {
+                Image(systemName: "gearshape.fill")
+                  .font(.system(size: 35))
+                  .foregroundColor(Color(.systemGray4))
+                  .padding()
+//                  .padding(.top, testing ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top )
+              }
+            }
+            Spacer()
+          }
+        )
       }
       .navigationViewStyle(StackNavigationViewStyle())
       .frame(maxWidth: .infinity, maxHeight: .infinity)
+      .sheet(isPresented: $showSettings) {
+        Settings()
+      }
     }
   }
 }
 
 struct Entry_Previews: PreviewProvider {
   static var previews: some View {
-    Entry()
+    Entry(testing: true)
   }
 }
