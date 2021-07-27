@@ -31,11 +31,11 @@
 		4F2AF96D26A2269F00470F84 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96C26A2269F00470F84 /* Stats.swift */; };
 		4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4F2AF96F26A23FF300470F84 /* india_montage.mp4 */; };
 		4F2AF97226A2439D00470F84 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF97126A2439D00470F84 /* PlayerView.swift */; };
+		4F317FE026B0663900E5E1F3 /* india.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4F317FDF26B0663900E5E1F3 /* india.svg */; };
 		4F355ADE269FC8B7009126EA /* InState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F355ADD269FC8B7009126EA /* InState.swift */; };
 		4F355AE0269FDE07009126EA /* india.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F355ADF269FDE07009126EA /* india.html */; };
 		4F355AE226A09311009126EA /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F355AE126A09311009126EA /* Answer.swift */; };
 		4F4F2BEB26A2581E00B336A2 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEA26A2581E00B336A2 /* Notes */; };
-		4F4F2BEE26A328A300B336A2 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F4F2BED26A328A300B336A2 /* WikipediaKit */; };
 		4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEF26A3384B00B336A2 /* States.xcassets */; };
 		4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5292FB26AF05DD00AD6C8A /* Settings.swift */; };
 		4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5292FE26AF0C5400AD6C8A /* ScreenCorners */; };
@@ -71,6 +71,7 @@
 		4F2AF96C26A2269F00470F84 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		4F2AF96F26A23FF300470F84 /* india_montage.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = india_montage.mp4; sourceTree = "<group>"; };
 		4F2AF97126A2439D00470F84 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		4F317FDF26B0663900E5E1F3 /* india.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = india.svg; sourceTree = "<group>"; };
 		4F355ADD269FC8B7009126EA /* InState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InState.swift; sourceTree = "<group>"; };
 		4F355ADF269FDE07009126EA /* india.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = india.html; sourceTree = "<group>"; };
 		4F355AE126A09311009126EA /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		4F5292FB26AF05DD00AD6C8A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4F6D09E3269FC4C3008BEA2A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4FA374D726AF54250019D079 /* OverflowScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowScroll.swift; sourceTree = "<group>"; };
+		4FA374D926AFADAA0019D079 /* india_states.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = india_states.entitlements; sourceTree = "<group>"; };
 		4FD60E94269F74C40006C798 /* india_states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = india_states.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD60E97269F74C40006C798 /* india_statesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = india_statesApp.swift; sourceTree = "<group>"; };
 		4FD60E99269F74C40006C798 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +96,6 @@
 			files = (
 				4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */,
 				4F2AF96126A0AD0800470F84 /* Introspect in Frameworks */,
-				4F4F2BEE26A328A300B336A2 /* WikipediaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				4F355ADF269FDE07009126EA /* india.html */,
+				4F317FDF26B0663900E5E1F3 /* india.svg */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
@@ -279,6 +281,7 @@
 		4FD60E96269F74C40006C798 /* india_states */ = {
 			isa = PBXGroup;
 			children = (
+				4FA374D926AFADAA0019D079 /* india_states.entitlements */,
 				4F2AF95726A09A1C00470F84 /* Model */,
 				4F2AF95B26A09B3000470F84 /* Resources */,
 				4F2AF95A26A09B1A00470F84 /* Views */,
@@ -314,7 +317,6 @@
 			name = india_states;
 			packageProductDependencies = (
 				4F2AF96026A0AD0800470F84 /* Introspect */,
-				4F4F2BED26A328A300B336A2 /* WikipediaKit */,
 				4F5292FE26AF0C5400AD6C8A /* ScreenCorners */,
 			);
 			productName = india_states;
@@ -371,6 +373,7 @@
 				4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */,
 				4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */,
 				4F233A9F26AE555E0046FD91 /* finish.wav in Resources */,
+				4F317FE026B0663900E5E1F3 /* india.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
 				DEVELOPMENT_TEAM = 5459S5J3PY;
@@ -547,6 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natebrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -557,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
 				DEVELOPMENT_TEAM = 5459S5J3PY;
@@ -569,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natebrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -629,11 +636,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F2AF95F26A0AD0800470F84 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
-		};
-		4F4F2BED26A328A300B336A2 /* WikipediaKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4F4F2BEC26A328A300B336A2 /* XCRemoteSwiftPackageReference "WikipediaKit" */;
-			productName = WikipediaKit;
 		};
 		4F5292FE26AF0C5400AD6C8A /* ScreenCorners */ = {
 			isa = XCSwiftPackageProductDependency;

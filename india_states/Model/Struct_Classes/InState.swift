@@ -17,6 +17,7 @@ struct InState: Equatable, Hashable {
   let image: InImage
   
   let capitals: (String, String?, String)
+  var bordered: Bool = false
   
   static func generateStatesList(testing: Bool = false) -> [InState] {
     var states = STATES_UT

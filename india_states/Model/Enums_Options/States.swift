@@ -21,7 +21,7 @@ let ARUNACHAL_PRADESH = InState(
   officialLangs: [.ENGLISH],
   image: InImage(license_type: .CC_BY_SA_4, source: "ap2", attr: "Jim Ankan Deka"),
   capitals: ("Itanagar", "Itanagar", "Guwahati")
-)
+) 
 let ASSAM = InState(
   name: "Assam",
   img_id: "assam_1_",
@@ -228,24 +228,27 @@ let STATES = [ANDHRA_PRADESH, ARUNACHAL_PRADESH, ASSAM, BIHAR, CHHATTISGARH, GOA
 
 let ANDAMAN_AND_NICOBAR_ISLANDS = InState(
   name: "Andaman and Nicobar Islands",
-  img_id: "andaman_and_nicobar_1_",
+  img_id: "andaman_x5F_new",
   officialLangs: [.HINDI, .ENGLISH],
   image: InImage(license_type: .CC_BY_SA_4, source: "ani", attr: "Shefali mithra"),
-  capitals: ("Port Blair", nil, "Kolkata")
+  capitals: ("Port Blair", nil, "Kolkata"),
+  bordered: true
 )
 let CHANDIGARH = InState(
   name: "Chandigarh",
-  img_id: "chandigarh_1_",
+  img_id: "chandigarh_x5F_new",
   officialLangs: [.ENGLISH],
   image: InImage(license_type: .CC_BY_SA_2, source: "ch2", attr: "duncid"),
-  capitals: ("Chandigarh", nil, "Chandigarh")
+  capitals: ("Chandigarh", nil, "Chandigarh"),
+  bordered: true
 )
 let DADRA_AND_NAGAR_HAVELI_AND_DAMAN_AND_DIU = InState(
   name: "Dadra and Nagar Haveli and Daman and Diu",
-  img_id: "dadra_and_nagar_haveli_1_",
+  img_id: "dadra_x5F_new_x5F_group",
   officialLangs: [.GUJARATI, .KONKANI, .MARATHI, .HINDI],
   image: InImage(license_type: .CC_BY_SA_2, source: "dnhdd", attr: "Sharada Prasad CS"),
-  capitals: ("Daman", nil, "Mumbai")
+  capitals: ("Daman", nil, "Mumbai"),
+  bordered: true
 )
 let DELHI = InState(
   name: "Delhi",
@@ -257,33 +260,35 @@ let DELHI = InState(
 )
 let JAMMU_AND_KASHMIR = InState(
   name: "Jammu and Kashmir",
-  img_id: "jammu_and_kashmir_1_",
+  img_id: "path4731",
   officialLangs: [.KASHMIRI, .DOGRI, .HINDI, .URDU, .ENGLISH],
   image: InImage(license_type: .CC_BY_SA_4, source: "jk", attr: "Illyas Ahmed"),
   capitals: ("Srinagar/Jammu", "Srinagar/Jammu", "Srinagar/Jammu")
 )
 let LADAKH = InState(
   name: "Ladakh",
-  img_id: "path3799",
+  img_id: "path3787",
   officialLangs: [.HINDI, .ENGLISH],
   image: InImage(license_type: .CC_BY_SA_3, source: "la", attr: "Narender9"),
   capitals: ("Leh/Kargil", nil, "Srinagar/Jammu")
 )
 let LAKSHADWEEP = InState(
   name: "Lakshadweep",
-  img_id: "path3781",
+  img_id: "lakshadweep_x5F_new",
   officialLangs: [.MALAYALAM],
   secondLangs: [.ENGLISH],
   image: InImage(license_type: .CC_BY_SA_4, source: "la2", attr: "Asssagar"),
-  capitals: ("Kavaratti", nil, "Kochi")
+  capitals: ("Kavaratti", nil, "Kochi"),
+  bordered: true
 )
 let PUDUCHERRY = InState(
   name: "Puducherry",
-  img_id: "yanam_pondicherry_1_ | pudducherry_pondicherry_1_ | karikal_pondicherry_1_ | mahe_pondicherry_1_",
+  img_id: "puducherry_x5F_new_x5F_group",
   officialLangs: [.TAMIL, .FRENCH, .ENGLISH],
   secondLangs: [.TELUGU, .MALAYALAM],
   image: InImage(license_type: .CC_BY_SA_3, source: "pu2", attr: "Karthik Easvur"),
-  capitals: ("Pondicherry", "Pondicherry", "Pondicherry")
+  capitals: ("Pondicherry", "Pondicherry", "Pondicherry"),
+  bordered: true
 )
 
 let UNION_TERRITORIES = [ANDAMAN_AND_NICOBAR_ISLANDS, CHANDIGARH, DADRA_AND_NAGAR_HAVELI_AND_DAMAN_AND_DIU, DELHI, JAMMU_AND_KASHMIR, LADAKH, LAKSHADWEEP, PUDUCHERRY]

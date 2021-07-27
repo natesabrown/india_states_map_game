@@ -16,6 +16,7 @@ struct Done: View {
   
   var body: some View {
     VStack {
+      Spacer()
       Text("Done!")
         .font(.largeTitle)
         .bold()
@@ -24,11 +25,13 @@ struct Done: View {
         .font(.title)
         .padding(.top, 4)
         .padding(.bottom)
+      Spacer()
       VStack(spacing: 10) {
         ForEach(Array(["1st", "2nd", "3rd", "4th"].enumerated()), id: \.offset) { index, text in
           DoneBar(text: text, index: index, tryList: $tryList)
         }
       }
+      Spacer()
       VStack(spacing: 10) {
         Button(action: {
           if onRestart != nil {
@@ -58,6 +61,7 @@ struct Done: View {
       .padding()
       .padding(.horizontal)
       .padding(.horizontal)
+      Spacer()
     }
     .padding()
     .multilineTextAlignment(.center)

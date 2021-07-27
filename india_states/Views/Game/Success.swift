@@ -7,7 +7,6 @@
 
 import SwiftUI
 import CoreLocation
-import WikipediaKit
 
 let GOOD_RESPONSES = ["Correct!", "Great Job!", "Spot On!", "Correctamundo!", "Awesome!"]
 
@@ -21,73 +20,79 @@ struct Success: View {
   var body: some View {
     GeometryReader { geo in
       ScrollView {
-        Spacer().frame(height: geo.size.height * 0.05)
-        VStack {
+        ScrollViewReader { reader in
+          Spacer().frame(height: geo.size.height * 0.05).id(0)
           VStack {
-            Image(systemName: "checkmark.seal.fill")
-              .resizable()
-              .frame(width: 50, height: 50)
-            Text(goodResponse)
-              .font(.title)
+            VStack {
+              Image(systemName: "checkmark.seal.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+              Text(goodResponse)
+                .font(.title)
+                .bold()
+            }
+            .padding(.vertical)
+            .foregroundColor(.green)
+            Text(state.name)
+              .font(.largeTitle)
               .bold()
-          }
-          .padding(.vertical)
-          .foregroundColor(.green)
-          Text(state.name)
-            .font(.largeTitle)
-            .bold()
-            .padding(.top, -12)
-            .padding(.bottom, -2)
-          VStack {
-            Image(state.image.source)
-              .resizable()
-              .frame(maxHeight: 250)
-            HStack {
-              if state.image.attr != nil {
-                Button(action: {
-                  openURL(URL(string: state.image.license_type!.rawValue)!)
-                }) {
-                  Text("Attribution: \(Text(state.image.attr!).bold()), Wikimedia Commons:  \(Text("License").bold())")
+              .padding(.top, -12)
+              .padding(.bottom, -2)
+            VStack {
+              Image(state.image.source)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxHeight: 250)
+              HStack {
+                if state.image.attr != nil {
+                  Button(action: {
+                    openURL(URL(string: state.image.license_type!.rawValue)!)
+                  }) {
+                    Text("Attribution: \(Text(state.image.attr!).bold()), Wikimedia Commons:  \(Text("License").bold())")
+                      .font(.caption)
+                      .lineLimit(1)
+                      .minimumScaleFactor(0.5)
+                  }
+                  
+                } else {
+                  Text("Public Domain Image")
                     .font(.caption)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
                 }
-                
-              } else {
-                Text("Public Domain Image")
-                  .font(.caption)
+              }
+              .foregroundColor(Color(.systemGray3))
+            }
+            .padding(.horizontal)
+            
+            CapitalView(state: state)
+              .padding(.top)
+            
+            VStack {
+              Text("\(Image(systemName: "message.fill")) Languages")
+                .font(.title3)
+                .padding(.bottom, 5)
+                .fixedSize(horizontal: false, vertical: true)
+              Text("Official")
+                .bold()
+              LanguageView(langs: state.officialLangs)
+              if state.secondLangs != nil {
+                Text("Second")
+                  .bold()
+                LanguageView(langs: state.secondLangs!)
               }
             }
-            .foregroundColor(Color(.systemGray3))
-          }
-          .padding(.horizontal)
-          
-          CapitalView(state: state)
-            .padding(.top)
-          
-          VStack {
-            Text("\(Image(systemName: "message.fill")) Languages")
-              .font(.title3)
-              .padding(.bottom, 5)
-              .fixedSize(horizontal: false, vertical: true)
-            Text("Official")
-              .bold()
-            LanguageView(langs: state.officialLangs)
-            if state.secondLangs != nil {
-              Text("Second")
-                .bold()
-              LanguageView(langs: state.secondLangs!)
+            .padding(.horizontal, 70)
+            .padding(.vertical)
+            .onAppear {
+              reader.scrollTo(0)
             }
           }
-          .padding(.horizontal, 70)
-          .padding(.vertical)
+          .multilineTextAlignment(.center)
+          .foregroundColor(.white)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .padding(.top, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top)
+          
+          Spacer().frame(height: geo.size.height * 0.15)
         }
-        .multilineTextAlignment(.center)
-        .foregroundColor(.white)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.top, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top)
-        
-        Spacer().frame(height: geo.size.height * 0.15)
       }
     }
     .overlay(
@@ -141,17 +146,17 @@ struct LanguageView: View {
     .background(Color.gray.opacity(0.4).cornerRadius(15))
   }
   
-//  func openWikiPage(for name: String) {
-//    let _ = Wikipedia.shared.requestOptimizedSearchResults(
-//      language: WikipediaLanguage("en"),
-//      term: "\(name) language") { (searchResults, error) in
-//      
-//      let firstURL = searchResults?.items[0].url
-//      if firstURL != nil {
-//        openURL(firstURL!)
-//      }
-//    }
-//  }
+  //  func openWikiPage(for name: String) {
+  //    let _ = Wikipedia.shared.requestOptimizedSearchResults(
+  //      language: WikipediaLanguage("en"),
+  //      term: "\(name) language") { (searchResults, error) in
+  //
+  //      let firstURL = searchResults?.items[0].url
+  //      if firstURL != nil {
+  //        openURL(firstURL!)
+  //      }
+  //    }
+  //  }
 }
 
 struct CapitalView: View {

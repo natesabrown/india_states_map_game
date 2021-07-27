@@ -39,7 +39,14 @@ struct WebViewController: View {
   
   func loadImage() {
     let newText = getIndiaString()
-    let replacedText = newText.replacingOccurrences(of: state.img_id, with: "\"\(state.img_id)\" fill=\"#000000!important\"")
+    let fillColor = "#138808"
+    let strokeColor = "#FF0000"
+    var replacedText = ""
+    if state.bordered {
+      replacedText = newText.replacingOccurrences(of: state.img_id, with: "\"\(state.img_id)\" style=\"stroke:\(strokeColor); stroke-width: 6.0;")
+    } else {
+      replacedText = newText.replacingOccurrences(of: state.img_id, with: "\"\(state.img_id)\" style=\"fill:\(strokeColor)")
+    }
     text = replacedText
   }
 }

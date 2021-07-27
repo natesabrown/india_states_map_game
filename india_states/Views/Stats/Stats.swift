@@ -79,8 +79,8 @@ struct Stats: View {
     let totalPercent = String("\(getTotalPercent())%")
     let timeString = getTimeString(startTime: Date(), endTime: Date().addingTimeInterval(Double(time)))
     
-    GeometryReader { geo in
-      ScrollView(showsIndicators: false) {
+//    GeometryReader { geo in
+//      ScrollView(showsIndicators: false) {
         VStack(alignment: .leading) {
           if statePercents.count == 0 {
             Spacer()
@@ -91,12 +91,12 @@ struct Stats: View {
               .padding()
             Spacer()
           } else {
-            Spacer()
-              .frame(height: geo.size.height * 0.07)
-            Text("Stats")
-              .font(.largeTitle)
-              .bold()
-              .padding(.bottom)
+//            Spacer()
+//              .frame(height: geo.size.height * 0.07)
+//            Text("Stats")
+//              .font(.largeTitle)
+//              .bold()
+//              .padding(.bottom)
             Element(
               text: Text("\(Image(systemName: "clock")) Best Time:"),
               result: timeString)
@@ -119,29 +119,33 @@ struct Stats: View {
               }
               .padding()
             }
-            .frame(maxHeight: 400)
             .background(LinearGradient(gradient: Gradient(colors: [Color.darkPurple.opacity(0.1), Color.lightPurple.opacity(0.5)]), startPoint: .top, endPoint: .bottom).cornerRadius(20))
             .shadow(radius: 4)
             Element(text: Text("Total"), result: totalPercent)
               .padding(.horizontal)
+              .padding(.bottom)
             Spacer()
           }
         }
-        .padding(.top, testing ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top )
+//        .padding(.top, testing ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top )
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .frame(minHeight: geo.size.height)
-      }
+//        .frame(minHeight: geo.size.height)
+//      }
       .font(.title2)
       .padding()
       .foregroundColor(.white)
       .background(dataGradient.edgesIgnoringSafeArea(.all))
-    }
-    .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("Stats")
+        .navigationBarHidden(false)
+//    }
+//    .edgesIgnoringSafeArea(.all)
     .onAppear {
       statePercents = getStatePercents()
       time = loadTime()
       UINavigationBar.appearance().tintColor = .white
-    }
+      UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+  }
+//    }
   }
 }
 
@@ -161,6 +165,8 @@ fileprivate struct Element: View {
 
 struct Stats_Previews: PreviewProvider {
   static var previews: some View {
-    Stats(testing: true)
+    NavigationView {
+      Stats(testing: true)
+    }
   }
 }

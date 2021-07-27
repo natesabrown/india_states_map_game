@@ -29,7 +29,6 @@ struct Answer: View {
       setOptions()
     }
     .onDisappear {
-      print("Clearing")
       answeredList = []
     }
   }

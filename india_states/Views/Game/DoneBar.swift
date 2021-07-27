@@ -55,6 +55,7 @@ struct DoneBar: View {
     return correctFrac
   }
 }
+
 struct DoneBar_Previews: PreviewProvider {
   static var previews: some View {
     DoneBar(text: "1st", index: 0, tryList: .constant([2, 4, 1, 3]))

@@ -9,13 +9,14 @@ import SwiftUI
 import Introspect
 
 struct Game: View {
-  @State var stateCollection = InState.generateStatesList(testing: true)
+  @State var stateCollection = InState.generateStatesList()
   @State var stateIndex = 0
   @State var currentState = STATES_UT[0]
   @State var showSuccess = false
   @State var tryList: [Int] = [0,0,0,0]
   @State var successSelection = 0
   @State var hideAnswers = false
+  @State var showExitAlert = false
   @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
   @EnvironmentObject var time: Time
   
@@ -30,7 +31,7 @@ struct Game: View {
               VStack {
                 HStack {
                   Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    showExitAlert = true
                   }) {
                     Image("backbutton")
                       .resizable()
@@ -160,6 +161,16 @@ struct Game: View {
     }
     .navigationBarTitle("")
     .navigationBarHidden(true)
+    .alert(isPresented: $showExitAlert) { () -> Alert in
+      let primaryButton = Alert.Button.default(Text("OK")) {
+        presentationMode.wrappedValue.dismiss()
+      }
+      return Alert(
+        title: Text("Exit?"),
+        message: Text("If you exit, you will lose all progress for this session."),
+        primaryButton: primaryButton,
+        secondaryButton: .cancel())
+    }
   }
   
   func updateData() {
@@ -192,7 +203,7 @@ struct Game: View {
     }
   }
   func resetCore() {
-    stateCollection = InState.generateStatesList(testing: true)
+    stateCollection = InState.generateStatesList()
     stateIndex = 0
     currentState = stateCollection[0]
     showSuccess = false
