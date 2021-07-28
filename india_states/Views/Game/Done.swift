@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Done: View {
-  @EnvironmentObject var time: Time
+  @ObservedObject var time: Time
   @Binding var tryList: [Int]
 //  @Binding var time: String
   var onRestart: (() -> Void)?
@@ -43,6 +43,7 @@ struct Done: View {
             .bold()
             .padding()
             .frame(maxWidth: .infinity)
+            .fixedSize(horizontal: false, vertical: true)
             .background(RoundedRectangle(cornerRadius: 20).strokeBorder(style: StrokeStyle(lineWidth: 5)))
         }
         Button(action: {
@@ -55,6 +56,7 @@ struct Done: View {
             .bold()
             .padding()
             .frame(maxWidth: .infinity)
+            .fixedSize(horizontal: false, vertical: true)
             .background(RoundedRectangle(cornerRadius: 20).fill(Color.green))
         }
       }
@@ -72,7 +74,7 @@ struct Done: View {
 
 struct Done_Previews: PreviewProvider {
   static var previews: some View {
-    Done(tryList: .constant([1, 2, 3, 4]))
+    Done(time: Time(), tryList: .constant([1, 2, 3, 4]))
       .environmentObject(Time())
       .darkBackground()
   }

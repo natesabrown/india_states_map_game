@@ -40,11 +40,21 @@
 		4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5292FB26AF05DD00AD6C8A /* Settings.swift */; };
 		4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5292FE26AF0C5400AD6C8A /* ScreenCorners */; };
 		4F6D09E4269FC4C3008BEA2A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D09E3269FC4C3008BEA2A /* WebView.swift */; };
+		4F86A1B626B093DB0050C91D /* isPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1B526B093DB0050C91D /* isPreview.swift */; };
+		4F86A1B826B094A90050C91D /* StatePercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1B726B094A90050C91D /* StatePercent.swift */; };
+		4F86A1BA26B094E90050C91D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1B926B094E90050C91D /* DataStore.swift */; };
+		4F86A1BE26B09A7A0050C91D /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1BD26B09A7A0050C91D /* NoDataView.swift */; };
+		4F86A1C026B09BB10050C91D /* viewIf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1BF26B09BB10050C91D /* viewIf.swift */; };
+		4F86A1C226B09C3E0050C91D /* boolOSChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C126B09C3E0050C91D /* boolOSChecks.swift */; };
+		4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */; };
+		4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C526B0AB670050C91D /* Gradients.swift */; };
+		4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */; };
 		4FA374D826AF54250019D079 /* OverflowScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA374D726AF54250019D079 /* OverflowScroll.swift */; };
 		4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E97269F74C40006C798 /* india_statesApp.swift */; };
 		4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E99269F74C40006C798 /* ContentView.swift */; };
 		4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9B269F74C60006C798 /* Assets.xcassets */; };
 		4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */; };
+		4FF19BD726B1DC9100281549 /* flagpng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF19BD626B1DC9100281549 /* flagpng.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +89,15 @@
 		4F4F2BEF26A3384B00B336A2 /* States.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = States.xcassets; sourceTree = "<group>"; };
 		4F5292FB26AF05DD00AD6C8A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4F6D09E3269FC4C3008BEA2A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4F86A1B526B093DB0050C91D /* isPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isPreview.swift; sourceTree = "<group>"; };
+		4F86A1B726B094A90050C91D /* StatePercent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePercent.swift; sourceTree = "<group>"; };
+		4F86A1B926B094E90050C91D /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		4F86A1BD26B09A7A0050C91D /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		4F86A1BF26B09BB10050C91D /* viewIf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewIf.swift; sourceTree = "<group>"; };
+		4F86A1C126B09C3E0050C91D /* boolOSChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boolOSChecks.swift; sourceTree = "<group>"; };
+		4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultPreviewStyle.swift; sourceTree = "<group>"; };
+		4F86A1C526B0AB670050C91D /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4FA374D726AF54250019D079 /* OverflowScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowScroll.swift; sourceTree = "<group>"; };
 		4FA374D926AFADAA0019D079 /* india_states.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = india_states.entitlements; sourceTree = "<group>"; };
 		4FD60E94269F74C40006C798 /* india_states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = india_states.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +106,7 @@
 		4FD60E9B269F74C60006C798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FD60EA0269F74C60006C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF19BD626B1DC9100281549 /* flagpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagpng.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4F2AF96C26A2269F00470F84 /* Stats.swift */,
+				4F86A1BD26B09A7A0050C91D /* NoDataView.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -155,6 +176,10 @@
 			children = (
 				4F2AF95826A09A2D00470F84 /* Color.swift */,
 				4F233AC326AE70330046FD91 /* String.swift */,
+				4F86A1B526B093DB0050C91D /* isPreview.swift */,
+				4F86A1BF26B09BB10050C91D /* viewIf.swift */,
+				4F86A1C126B09C3E0050C91D /* boolOSChecks.swift */,
+				4F86A1C526B0AB670050C91D /* Gradients.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +193,7 @@
 				4F233AB526AE69050046FD91 /* StateData.swift */,
 				4F233AB726AE690C0046FD91 /* InImage.swift */,
 				4F233AB926AE69170046FD91 /* License.swift */,
+				4F86A1B726B094A90050C91D /* StatePercent.swift */,
 			);
 			path = Enums_Options;
 			sourceTree = "<group>";
@@ -185,6 +211,7 @@
 			children = (
 				4F355ADD269FC8B7009126EA /* InState.swift */,
 				4F233AA026AE55820046FD91 /* SoundPlayer.swift */,
+				4F86A1B926B094E90050C91D /* DataStore.swift */,
 			);
 			path = Struct_Classes;
 			sourceTree = "<group>";
@@ -194,6 +221,7 @@
 			children = (
 				4F233AC126AE6D040046FD91 /* DarkBackground.swift */,
 				4FA374D726AF54250019D079 /* OverflowScroll.swift */,
+				4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -214,6 +242,7 @@
 			children = (
 				4FD60E97269F74C40006C798 /* india_statesApp.swift */,
 				4FD60E99269F74C40006C798 /* ContentView.swift */,
+				4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */,
 				4F233AA226AE61B60046FD91 /* Entry */,
 				4F233AA426AE61D30046FD91 /* Game */,
 				4F233AA526AE61F30046FD91 /* Stats */,
@@ -232,6 +261,7 @@
 				4F2AF95C26A09B6500470F84 /* HTML */,
 				4FD60E9B269F74C60006C798 /* Assets.xcassets */,
 				4F4F2BEF26A3384B00B336A2 /* States.xcassets */,
+				4FF19BD626B1DC9100281549 /* flagpng.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -368,11 +398,13 @@
 				4F233A9D26AE55290046FD91 /* correct.wav in Resources */,
 				4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */,
 				4F4F2BEB26A2581E00B336A2 /* Notes in Resources */,
+				4FF19BD726B1DC9100281549 /* flagpng.png in Resources */,
 				4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */,
 				4F355AE0269FDE07009126EA /* india.html in Resources */,
 				4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */,
 				4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */,
 				4F233A9F26AE555E0046FD91 /* finish.wav in Resources */,
+				4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */,
 				4F317FE026B0663900E5E1F3 /* india.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,25 +418,33 @@
 			files = (
 				4F233AAB26AE65580046FD91 /* GameTime.swift in Sources */,
 				4F233AC226AE6D040046FD91 /* DarkBackground.swift in Sources */,
+				4F86A1B826B094A90050C91D /* StatePercent.swift in Sources */,
 				4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */,
 				4FA374D826AF54250019D079 /* OverflowScroll.swift in Sources */,
 				4F6D09E4269FC4C3008BEA2A /* WebView.swift in Sources */,
 				4F2AF96D26A2269F00470F84 /* Stats.swift in Sources */,
 				4F233AB626AE69050046FD91 /* StateData.swift in Sources */,
+				4F86A1BE26B09A7A0050C91D /* NoDataView.swift in Sources */,
+				4F86A1B626B093DB0050C91D /* isPreview.swift in Sources */,
 				4F2AF95926A09A2D00470F84 /* Color.swift in Sources */,
 				4F233AA926AE644E0046FD91 /* TimeView.swift in Sources */,
 				4F2AF96326A0B1BB00470F84 /* Success.swift in Sources */,
 				4F233ABC26AE6A4E0046FD91 /* States.swift in Sources */,
+				4F86A1BA26B094E90050C91D /* DataStore.swift in Sources */,
 				4F2AF96726A11A8D00470F84 /* Done.swift in Sources */,
 				4F2AF96926A11D0A00470F84 /* SingleAxisGeometryReader.swift in Sources */,
+				4F86A1C026B09BB10050C91D /* viewIf.swift in Sources */,
 				4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */,
 				4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */,
 				4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */,
 				4F233AB226AE67DC0046FD91 /* IndiaLanguage.swift in Sources */,
 				4F2AF97226A2439D00470F84 /* PlayerView.swift in Sources */,
 				4F233ABA26AE69170046FD91 /* License.swift in Sources */,
+				4F86A1C226B09C3E0050C91D /* boolOSChecks.swift in Sources */,
 				4F233AC426AE70330046FD91 /* String.swift in Sources */,
+				4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */,
 				4F233ABE26AE6B270046FD91 /* DoneBar.swift in Sources */,
+				4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */,
 				4F233AB826AE690C0046FD91 /* InImage.swift in Sources */,
 				4F233AA126AE55820046FD91 /* SoundPlayer.swift in Sources */,
 				4F2AF96526A0BB6400470F84 /* Entry.swift in Sources */,
@@ -549,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.natebrown.india-states";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.natebrown.india-states";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;

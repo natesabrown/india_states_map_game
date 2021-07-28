@@ -145,18 +145,6 @@ struct LanguageView: View {
     .frame(maxWidth: .infinity)
     .background(Color.gray.opacity(0.4).cornerRadius(15))
   }
-  
-  //  func openWikiPage(for name: String) {
-  //    let _ = Wikipedia.shared.requestOptimizedSearchResults(
-  //      language: WikipediaLanguage("en"),
-  //      term: "\(name) language") { (searchResults, error) in
-  //
-  //      let firstURL = searchResults?.items[0].url
-  //      if firstURL != nil {
-  //        openURL(firstURL!)
-  //      }
-  //    }
-  //  }
 }
 
 struct CapitalView: View {

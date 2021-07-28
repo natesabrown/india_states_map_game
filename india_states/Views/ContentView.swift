@@ -8,25 +8,22 @@
 import SwiftUI
 import AVKit
 
-struct ContentView: View {
-  @ObservedObject var time = Time()
-  
-    var body: some View {
-      Entry()
-        .environmentObject(time)
-        .onAppear {
-          do {
-              try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
-              try AVAudioSession.sharedInstance().setActive(true)
-          } catch let error {
-              print(error.localizedDescription)
-          }
+struct ContentView: View {  
+  var body: some View {
+    Entry()
+      .onAppear {
+        do {
+          try AVAudioSession.sharedInstance().setCategory(.ambient, mode: .default)
+          try AVAudioSession.sharedInstance().setActive(true)
+        } catch let error {
+          print(error.localizedDescription)
         }
-    }
+      }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

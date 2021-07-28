@@ -18,7 +18,7 @@ struct Game: View {
   @State var hideAnswers = false
   @State var showExitAlert = false
   @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-  @EnvironmentObject var time: Time
+  @StateObject var time = Time()
   
   var body: some View {
     ZStack {
@@ -55,7 +55,7 @@ struct Game: View {
                     .font(.title2)
                   //                    .shadow(radius: 3)
                   Spacer()
-                  TimeView(showSuccess: $showSuccess)
+                  TimeView(time: time, showSuccess: $showSuccess)
                 }
                 .foregroundColor(Color.indiaGreen)
                 .padding()
@@ -72,21 +72,15 @@ struct Game: View {
               Spacer()
             }
             if !hideAnswers {
-              TabView(selection: $stateIndex) {
-                ForEach(Array(stateCollection.enumerated()), id: \.offset) { index, state in
-                  Answer(state: state, tryList: $tryList, onSuccess: {
-                    SoundPlayer.shared.playSound(of: .correct)
-                    withAnimation {
-                      showSuccess = true
-                    }
-                    if (stateIndex + 1) == stateCollection.count {
-                      updateData()
-                    }
-                  })
-                  .simultaneousGesture(DragGesture())
-                  .tag(index)
+              AnswersView(stateIndex: $stateIndex, stateCollection: $stateCollection, tryList: $tryList, updateData: self.updateData, onSuccess: {
+                SoundPlayer.shared.playSound(of: .correct)
+                withAnimation {
+                  showSuccess = true
                 }
-              }
+                if (stateIndex + 1) == stateCollection.count {
+                  updateData()
+                }
+              })
             }
           }
           .frame(maxHeight: .infinity)
@@ -128,7 +122,7 @@ struct Game: View {
                 .tag(0)
                 ZStack {
                   Color.black.opacity(0.8).edgesIgnoringSafeArea(.all)
-                  Done(tryList: $tryList, onRestart: {
+                  Done(time: time, tryList: $tryList, onRestart: {
                     resetEverything()
                   }, onDone: {
                     resetEverything()
@@ -152,6 +146,7 @@ struct Game: View {
     .onAppear {
       currentState = stateCollection[stateIndex]
       time.resetTime()
+      print("I'm hear!")
     }
     .onDisappear {
       resetEverything(animated: false)
@@ -170,6 +165,9 @@ struct Game: View {
         message: Text("If you exit, you will lose all progress for this session."),
         primaryButton: primaryButton,
         secondaryButton: .cancel())
+    }
+    .onChange(of: stateCollection) { _ in
+      print("I am being changed!")
     }
   }
   
@@ -210,6 +208,31 @@ struct Game: View {
     tryList = [0,0,0,0]
     successSelection = 0
     time.resetTime()
+  }
+}
+
+struct AnswersView: View, Equatable {
+  @Binding var stateIndex: Int
+  @Binding var stateCollection: [InState]
+  @Binding var tryList: [Int]
+  var updateData: (() -> Void)
+  var onSuccess: (() -> Void)
+  
+  var body: some View {
+    TabView(selection: $stateIndex) {
+      ForEach(Array(stateCollection.enumerated()), id: \.offset) { index, state in
+        Answer(state: state, tryList: $tryList, onSuccess: onSuccess)
+        .simultaneousGesture(DragGesture())
+        .tag(index)
+        .frame(maxWidth: 800)
+          .padding(.bottom)
+      }
+    }
+  }
+  
+  static func == (lhs: Self, rhs: Self) -> Bool {
+    let check = (lhs.stateCollection == rhs.stateCollection) 
+    return check
   }
 }
 

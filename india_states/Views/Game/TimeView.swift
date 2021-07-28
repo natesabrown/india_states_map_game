@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TimeView: View {
+  @ObservedObject var time: Time
   @Binding var showSuccess: Bool
   @State var startTime = Date()
   let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-  @EnvironmentObject var time: Time
   
   var body: some View {
     Text(time.timeString())
@@ -27,7 +27,7 @@ struct TimeView: View {
 
 struct TimeView_Previews: PreviewProvider {
   static var previews: some View {
-    TimeView(showSuccess: .constant(true))
+    TimeView(time: Time(), showSuccess: .constant(true))
       .environmentObject(Time())
   }
 }

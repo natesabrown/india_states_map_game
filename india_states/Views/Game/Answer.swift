@@ -9,6 +9,18 @@ import SwiftUI
 
 let RR_RAD: CGFloat = 12
 
+func getOptions(for state: InState) -> [InState] {
+  var returnList = [state]
+  var states = STATES_UT
+  states = states.filter { $0 != state }
+  for _ in 0 ..< 3 {
+    let newState = states.randomElement()!
+    returnList.append(newState)
+    states = states.filter { $0 != newState }
+  }
+  return returnList.shuffled()
+}
+
 struct Answer: View {
   var state: InState
   @State var choiceList: [InState] = []
@@ -25,24 +37,15 @@ struct Answer: View {
     }
     .padding()
     .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .onChange(of: state) { _ in
+      choiceList = getOptions(for: state)
+    }
     .onAppear {
-      setOptions()
+      choiceList = getOptions(for: state)
     }
     .onDisappear {
       answeredList = []
     }
-  }
-  
-  func setOptions() {
-    var returnList = [state]
-    var states = STATES_UT
-    states = states.filter { $0 != state }
-    for _ in 0 ..< 3 {
-      let newState = states.randomElement()!
-      returnList.append(newState)
-      states = states.filter { $0 != newState }
-    }
-    choiceList = returnList.shuffled()
   }
 }
 
@@ -52,7 +55,7 @@ struct AnswerRow: View {
   var choiceCollection: Array<InState>.SubSequence
   @Binding var answeredList: [InState]
   var state: InState
-  @State var maxHeight: CGFloat = 0
+//  @State var maxHeight: CGFloat = 0
   @Binding var answerCorrect: Bool
   @Binding var tryList: [Int]
   var onSuccess: (() -> Void)?
@@ -93,32 +96,17 @@ struct AnswerRow: View {
           Text(choice.name)
             .bold()
             .lineLimit(3)
-            .minimumScaleFactor(0.6)
+            .minimumScaleFactor(0.3)
             .foregroundColor(.indiaGreen)
-//            .foregroundColor(.white)
-//            .colorMultiply(color)
-            .padding(8)
-            .frame(maxWidth: .infinity, minHeight: maxHeight)
+            .font(.isIpad ? .title2 : Bool(.isMac) ? .title : .body)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .multilineTextAlignment(.center)
             .background(
-//              RoundedRectangle(cornerRadius: RR_RAD)
-//                .strokeBorder(color, lineWidth: 5)
-//                .background(RoundedRectangle(cornerRadius: RR_RAD).fill(Color.white).animation(nil))
-//                .animation(nil)
               RoundedRectangle(cornerRadius: 14)
                 .fill(Color.white)
                 .shadow(radius: 6, y: 2)
-                .animation(nil)
-            )
-            .overlay(
-              GeometryReader { geo in
-                Color.clear.onAppear {
-                  if geo.size.height > maxHeight {
-                    maxHeight = geo.size.height
-                  }
-                }
-              }
-            )
+                .animation(nil))
+            .padding(3)
         }
         .opacity(disabled ? 0.5 : 1.0)
         .disabled(disabled)

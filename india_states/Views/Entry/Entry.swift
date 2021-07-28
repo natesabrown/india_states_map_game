@@ -25,7 +25,12 @@ struct Entry: View {
             Image("india_flag")
               .resizable()
               .aspectRatio(contentMode: .fit)
-              .frame(width: geo.size.width * 0.6)
+              .if(.isPhone) { view in
+                view.frame(width: geo.size.width * 0.6)
+              }
+              .if(.isIpad || .isMac) { view in
+                view.frame(maxWidth: 400)
+              }
             Text("India States")
               .bold()
               .font(.system(size: 100))
