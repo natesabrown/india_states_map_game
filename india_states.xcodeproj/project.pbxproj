@@ -22,7 +22,6 @@
 		4F233AC426AE70330046FD91 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F233AC326AE70330046FD91 /* String.swift */; };
 		4F2AF95926A09A2D00470F84 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF95826A09A2D00470F84 /* Color.swift */; };
 		4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF95D26A0A6F400470F84 /* Game.swift */; };
-		4F2AF96126A0AD0800470F84 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2AF96026A0AD0800470F84 /* Introspect */; };
 		4F2AF96326A0B1BB00470F84 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96226A0B1BB00470F84 /* Success.swift */; };
 		4F2AF96526A0BB6400470F84 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96426A0BB6400470F84 /* Entry.swift */; };
 		4F2AF96726A11A8D00470F84 /* Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96626A11A8D00470F84 /* Done.swift */; };
@@ -38,7 +37,6 @@
 		4F4F2BEB26A2581E00B336A2 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEA26A2581E00B336A2 /* Notes */; };
 		4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEF26A3384B00B336A2 /* States.xcassets */; };
 		4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5292FB26AF05DD00AD6C8A /* Settings.swift */; };
-		4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5292FE26AF0C5400AD6C8A /* ScreenCorners */; };
 		4F6D09E4269FC4C3008BEA2A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6D09E3269FC4C3008BEA2A /* WebView.swift */; };
 		4F86A1B626B093DB0050C91D /* isPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1B526B093DB0050C91D /* isPreview.swift */; };
 		4F86A1B826B094A90050C91D /* StatePercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1B726B094A90050C91D /* StatePercent.swift */; };
@@ -114,8 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F5292FF26AF0C5400AD6C8A /* ScreenCorners in Frameworks */,
-				4F2AF96126A0AD0800470F84 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +342,6 @@
 			);
 			name = india_states;
 			packageProductDependencies = (
-				4F2AF96026A0AD0800470F84 /* Introspect */,
-				4F5292FE26AF0C5400AD6C8A /* ScreenCorners */,
 			);
 			productName = india_states;
 			productReference = 4FD60E94269F74C40006C798 /* india_states.app */;
@@ -576,10 +570,11 @@
 		4FD60EA4269F74C60006C798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
 				DEVELOPMENT_TEAM = 5459S5J3PY;
 				ENABLE_PREVIEWS = YES;
@@ -591,19 +586,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4FD60EA5269F74C60006C798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
 				DEVELOPMENT_TEAM = 5459S5J3PY;
 				ENABLE_PREVIEWS = YES;
@@ -615,9 +611,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -670,19 +666,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4F2AF96026A0AD0800470F84 /* Introspect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4F2AF95F26A0AD0800470F84 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
-			productName = Introspect;
-		};
-		4F5292FE26AF0C5400AD6C8A /* ScreenCorners */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */;
-			productName = ScreenCorners;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FD60E8C269F74C40006C798 /* Project object */;
 }

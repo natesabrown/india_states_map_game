@@ -19,85 +19,86 @@ struct Success: View {
   
   var body: some View {
     GeometryReader { geo in
-      ScrollView {
-        ScrollViewReader { reader in
-          Spacer().frame(height: geo.size.height * 0.05).id(0)
-          VStack {
+      VStack {
+        ScrollView(showsIndicators: true) {
+          ScrollViewReader { reader in
+            Spacer().frame(height: geo.size.height * 0.05).id(0)
             VStack {
-              Image(systemName: "checkmark.seal.fill")
-                .resizable()
-                .frame(width: 50, height: 50)
-              Text(goodResponse)
-                .font(.title)
+              VStack {
+                Image(systemName: "checkmark.seal.fill")
+                  .resizable()
+                  .frame(width: 50, height: 50)
+                Text(goodResponse)
+                  .font(.title)
+                  .bold()
+              }
+              .padding(.vertical)
+              .foregroundColor(.green)
+              Text(state.name)
+                .font(.largeTitle)
                 .bold()
-            }
-            .padding(.vertical)
-            .foregroundColor(.green)
-            Text(state.name)
-              .font(.largeTitle)
-              .bold()
-              .padding(.top, -12)
-              .padding(.bottom, -2)
-            VStack {
-              Image(state.image.source)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxHeight: 250)
-              HStack {
-                if state.image.attr != nil {
-                  Button(action: {
-                    openURL(URL(string: state.image.license_type!.rawValue)!)
-                  }) {
-                    Text("Attribution: \(Text(state.image.attr!).bold()), Wikimedia Commons:  \(Text("License").bold())")
+                .padding(.top, -12)
+                .padding(.bottom, -2)
+              VStack {
+                Image(state.image.source)
+                  .resizable()
+                  .aspectRatio(contentMode: .fit)
+                  .frame(maxHeight: 250)
+                HStack {
+                  if state.image.attr != nil {
+                    Button(action: {
+                      openURL(URL(string: state.image.license_type!.rawValue)!)
+                    }) {
+                      Text("Attribution: \(Text(state.image.attr!).bold()), Wikimedia Commons:  \(Text("License").bold())")
+                        .font(.caption)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
+                        .foregroundColor(Color(.systemGray))
+                    }
+                    
+                  } else {
+                    Text("Public Domain Image")
                       .font(.caption)
-                      .lineLimit(1)
-                      .minimumScaleFactor(0.5)
                   }
-                  
-                } else {
-                  Text("Public Domain Image")
-                    .font(.caption)
+                }
+                .foregroundColor(Color(.systemGray3))
+              }
+              .padding(.horizontal)
+              
+              CapitalView(state: state)
+                .padding(.top)
+              
+              VStack {
+                Text("\(Image(systemName: "message.fill")) Languages")
+                  .font(.title3)
+                  .padding(.bottom, 5)
+                  .fixedSize(horizontal: false, vertical: true)
+                Text("Official")
+                  .bold()
+                LanguageView(langs: state.officialLangs)
+                if state.secondLangs != nil {
+                  Text("Second")
+                    .bold()
+                  LanguageView(langs: state.secondLangs!)
                 }
               }
-              .foregroundColor(Color(.systemGray3))
-            }
-            .padding(.horizontal)
-            
-            CapitalView(state: state)
-              .padding(.top)
-            
-            VStack {
-              Text("\(Image(systemName: "message.fill")) Languages")
-                .font(.title3)
-                .padding(.bottom, 5)
-                .fixedSize(horizontal: false, vertical: true)
-              Text("Official")
-                .bold()
-              LanguageView(langs: state.officialLangs)
-              if state.secondLangs != nil {
-                Text("Second")
-                  .bold()
-                LanguageView(langs: state.secondLangs!)
+              .padding(.horizontal, 70)
+              .padding(.vertical)
+              .onAppear {
+                reader.scrollTo(0)
               }
             }
-            .padding(.horizontal, 70)
-            .padding(.vertical)
-            .onAppear {
-              reader.scrollTo(0)
-            }
+            .multilineTextAlignment(.center)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.top, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top)
+            .padding(.bottom)
+            
+//            Spacer().frame(height: geo.size.height * 0.15)
           }
-          .multilineTextAlignment(.center)
-          .foregroundColor(.white)
-          .frame(maxWidth: .infinity, maxHeight: .infinity)
-          .padding(.top, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.top)
-          
-          Spacer().frame(height: geo.size.height * 0.15)
         }
-      }
-    }
-    .overlay(
-      VStack {
-        Spacer()
+        .preferredColorScheme(.dark)
+        
         Button(action: {
           if onButtonPress != nil {
             onButtonPress!()
@@ -113,11 +114,34 @@ struct Success: View {
                 .fill(Color.green)
                 .shadow(radius: 5)
             )
+            .padding()
+            .padding(.bottom, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.bottom)
         }
       }
-      .padding(.bottom, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.bottom)
-      .padding(.bottom)
-    )
+    }
+    //    .overlay(
+    //      VStack {
+    //        Spacer()
+    //        Button(action: {
+    //          if onButtonPress != nil {
+    //            onButtonPress!()
+    //          }
+    //        }) {
+    //          Text("Next")
+    //            .font(.title2)
+    //            .foregroundColor(.white)
+    //            .padding()
+    //            .padding(.horizontal)
+    //            .background(
+    //              RoundedRectangle(cornerRadius: 20)
+    //                .fill(Color.green)
+    //                .shadow(radius: 5)
+    //            )
+    //        }
+    //      }
+    //      .padding(.bottom, test ? 0 : UIApplication.shared.windows.first!.safeAreaInsets.bottom)
+    //      .padding(.bottom)
+    //    )
   }
 }
 

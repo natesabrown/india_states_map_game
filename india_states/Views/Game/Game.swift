@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Introspect
 
 struct Game: View {
   @State var stateCollection = InState.generateStatesList()

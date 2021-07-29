@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import ScreenCorners
 
 struct Settings: View {
   var testing = false
