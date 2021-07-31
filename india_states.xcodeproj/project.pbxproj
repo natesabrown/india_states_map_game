@@ -29,11 +29,10 @@
 		4F2AF96B26A2229200470F84 /* SettingsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96A26A2229200470F84 /* SettingsKey.swift */; };
 		4F2AF96D26A2269F00470F84 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF96C26A2269F00470F84 /* Stats.swift */; };
 		4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4F2AF96F26A23FF300470F84 /* india_montage.mp4 */; };
-		4F2AF97226A2439D00470F84 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF97126A2439D00470F84 /* PlayerView.swift */; };
-		4F317FE026B0663900E5E1F3 /* india.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4F317FDF26B0663900E5E1F3 /* india.svg */; };
+		4F2AF97226A2439D00470F84 /* LoopingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AF97126A2439D00470F84 /* LoopingPlayerView.swift */; };
 		4F355ADE269FC8B7009126EA /* InState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F355ADD269FC8B7009126EA /* InState.swift */; };
 		4F355AE0269FDE07009126EA /* india.html in Resources */ = {isa = PBXBuildFile; fileRef = 4F355ADF269FDE07009126EA /* india.html */; };
-		4F355AE226A09311009126EA /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F355AE126A09311009126EA /* Answer.swift */; };
+		4F355AE226A09311009126EA /* AnswersForState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F355AE126A09311009126EA /* AnswersForState.swift */; };
 		4F4F2BEB26A2581E00B336A2 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEA26A2581E00B336A2 /* Notes */; };
 		4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4F2BEF26A3384B00B336A2 /* States.xcassets */; };
 		4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5292FB26AF05DD00AD6C8A /* Settings.swift */; };
@@ -47,12 +46,22 @@
 		4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */; };
 		4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C526B0AB670050C91D /* Gradients.swift */; };
 		4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */; };
+		4F8CB26226B49CAF002B6FCD /* CapitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26126B49CAF002B6FCD /* CapitalView.swift */; };
+		4F8CB26426B49DC8002B6FCD /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26326B49DC8002B6FCD /* LanguageView.swift */; };
+		4F8CB26626B4A3CA002B6FCD /* StateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26526B4A3CA002B6FCD /* StateImage.swift */; };
+		4F8CB26826B4A510002B6FCD /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26726B4A510002B6FCD /* Languages.swift */; };
+		4F8CB26A26B4A5C2002B6FCD /* PositiveMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26926B4A5C2002B6FCD /* PositiveMessage.swift */; };
+		4F8CB26C26B4A5FD002B6FCD /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26B26B4A5FD002B6FCD /* NextButton.swift */; };
+		4F8CB26F26B4DB66002B6FCD /* AnswerTabContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26E26B4DB66002B6FCD /* AnswerTabContent.swift */; };
+		4F8CB27126B4E87B002B6FCD /* StandardXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB27026B4E87B002B6FCD /* StandardXButton.swift */; };
 		4FA374D826AF54250019D079 /* OverflowScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA374D726AF54250019D079 /* OverflowScroll.swift */; };
 		4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E97269F74C40006C798 /* india_statesApp.swift */; };
 		4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD60E99269F74C40006C798 /* ContentView.swift */; };
 		4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9B269F74C60006C798 /* Assets.xcassets */; };
 		4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */; };
 		4FF19BD726B1DC9100281549 /* flagpng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF19BD626B1DC9100281549 /* flagpng.png */; };
+		4FF19BDB26B4640A00281549 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF19BDA26B4640A00281549 /* Colors.xcassets */; };
+		4FF19BDF26B4710600281549 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF19BDE26B4710600281549 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,11 +87,10 @@
 		4F2AF96A26A2229200470F84 /* SettingsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKey.swift; sourceTree = "<group>"; };
 		4F2AF96C26A2269F00470F84 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		4F2AF96F26A23FF300470F84 /* india_montage.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = india_montage.mp4; sourceTree = "<group>"; };
-		4F2AF97126A2439D00470F84 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		4F317FDF26B0663900E5E1F3 /* india.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = india.svg; sourceTree = "<group>"; };
+		4F2AF97126A2439D00470F84 /* LoopingPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopingPlayerView.swift; sourceTree = "<group>"; };
 		4F355ADD269FC8B7009126EA /* InState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InState.swift; sourceTree = "<group>"; };
 		4F355ADF269FDE07009126EA /* india.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = india.html; sourceTree = "<group>"; };
-		4F355AE126A09311009126EA /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		4F355AE126A09311009126EA /* AnswersForState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersForState.swift; sourceTree = "<group>"; };
 		4F4F2BEA26A2581E00B336A2 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4F4F2BEF26A3384B00B336A2 /* States.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = States.xcassets; sourceTree = "<group>"; };
 		4F5292FB26AF05DD00AD6C8A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -96,6 +104,14 @@
 		4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultPreviewStyle.swift; sourceTree = "<group>"; };
 		4F86A1C526B0AB670050C91D /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4F8CB26126B49CAF002B6FCD /* CapitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalView.swift; sourceTree = "<group>"; };
+		4F8CB26326B49DC8002B6FCD /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		4F8CB26526B4A3CA002B6FCD /* StateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateImage.swift; sourceTree = "<group>"; };
+		4F8CB26726B4A510002B6FCD /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		4F8CB26926B4A5C2002B6FCD /* PositiveMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveMessage.swift; sourceTree = "<group>"; };
+		4F8CB26B26B4A5FD002B6FCD /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		4F8CB26E26B4DB66002B6FCD /* AnswerTabContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTabContent.swift; sourceTree = "<group>"; };
+		4F8CB27026B4E87B002B6FCD /* StandardXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardXButton.swift; sourceTree = "<group>"; };
 		4FA374D726AF54250019D079 /* OverflowScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowScroll.swift; sourceTree = "<group>"; };
 		4FA374D926AFADAA0019D079 /* india_states.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = india_states.entitlements; sourceTree = "<group>"; };
 		4FD60E94269F74C40006C798 /* india_states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = india_states.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +121,8 @@
 		4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FD60EA0269F74C60006C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FF19BD626B1DC9100281549 /* flagpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagpng.png; sourceTree = "<group>"; };
+		4FF19BDA26B4640A00281549 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4FF19BDE26B4710600281549 /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				4F2AF96426A0BB6400470F84 /* Entry.swift */,
+				4F2AF97126A2439D00470F84 /* LoopingPlayerView.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -138,13 +157,9 @@
 		4F233AA426AE61D30046FD91 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				4F2AF95D26A0A6F400470F84 /* Game.swift */,
-				4F233AA826AE644E0046FD91 /* TimeView.swift */,
-				4F355AE126A09311009126EA /* Answer.swift */,
-				4F6D09E3269FC4C3008BEA2A /* WebView.swift */,
-				4F2AF96226A0B1BB00470F84 /* Success.swift */,
-				4F2AF96626A11A8D00470F84 /* Done.swift */,
-				4F233ABD26AE6B270046FD91 /* DoneBar.swift */,
+				4F8CB26D26B4DA91002B6FCD /* Main */,
+				4F8CB26026B49C88002B6FCD /* Success */,
+				4F8CB25F26B49C2E002B6FCD /* Done */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				4F2AF96826A11D0A00470F84 /* SingleAxisGeometryReader.swift */,
-				4F2AF97126A2439D00470F84 /* PlayerView.swift */,
+				4FF19BDE26B4710600281549 /* StatusBarController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -236,9 +251,7 @@
 		4F2AF95A26A09B1A00470F84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4FD60E97269F74C40006C798 /* india_statesApp.swift */,
-				4FD60E99269F74C40006C798 /* ContentView.swift */,
-				4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */,
+				4FF19BDD26B466D100281549 /* Launch */,
 				4F233AA226AE61B60046FD91 /* Entry */,
 				4F233AA426AE61D30046FD91 /* Game */,
 				4F233AA526AE61F30046FD91 /* Stats */,
@@ -255,9 +268,8 @@
 				4F233A9926AE53ED0046FD91 /* Sounds */,
 				4F2AF96E26A23FF300470F84 /* Videos */,
 				4F2AF95C26A09B6500470F84 /* HTML */,
-				4FD60E9B269F74C60006C798 /* Assets.xcassets */,
-				4F4F2BEF26A3384B00B336A2 /* States.xcassets */,
-				4FF19BD626B1DC9100281549 /* flagpng.png */,
+				4FF19BDC26B4644600281549 /* Images */,
+				4FF19BDA26B4640A00281549 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				4F355ADF269FDE07009126EA /* india.html */,
-				4F317FDF26B0663900E5E1F3 /* india.svg */,
 			);
 			path = HTML;
 			sourceTree = "<group>";
@@ -283,8 +294,44 @@
 			isa = PBXGroup;
 			children = (
 				4F5292FB26AF05DD00AD6C8A /* Settings.swift */,
+				4F8CB27026B4E87B002B6FCD /* StandardXButton.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		4F8CB25F26B49C2E002B6FCD /* Done */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF96626A11A8D00470F84 /* Done.swift */,
+				4F233ABD26AE6B270046FD91 /* DoneBar.swift */,
+			);
+			path = Done;
+			sourceTree = "<group>";
+		};
+		4F8CB26026B49C88002B6FCD /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF96226A0B1BB00470F84 /* Success.swift */,
+				4F8CB26926B4A5C2002B6FCD /* PositiveMessage.swift */,
+				4F8CB26B26B4A5FD002B6FCD /* NextButton.swift */,
+				4F8CB26526B4A3CA002B6FCD /* StateImage.swift */,
+				4F8CB26726B4A510002B6FCD /* Languages.swift */,
+				4F8CB26326B49DC8002B6FCD /* LanguageView.swift */,
+				4F8CB26126B49CAF002B6FCD /* CapitalView.swift */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		4F8CB26D26B4DA91002B6FCD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F2AF95D26A0A6F400470F84 /* Game.swift */,
+				4F8CB26E26B4DB66002B6FCD /* AnswerTabContent.swift */,
+				4F355AE126A09311009126EA /* AnswersForState.swift */,
+				4F6D09E3269FC4C3008BEA2A /* WebView.swift */,
+				4F233AA826AE644E0046FD91 /* TimeView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		4FD60E8B269F74C40006C798 = {
@@ -323,6 +370,26 @@
 				4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FF19BDC26B4644600281549 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FD60E9B269F74C60006C798 /* Assets.xcassets */,
+				4F4F2BEF26A3384B00B336A2 /* States.xcassets */,
+				4FF19BD626B1DC9100281549 /* flagpng.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4FF19BDD26B466D100281549 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4FD60E97269F74C40006C798 /* india_statesApp.swift */,
+				4FD60E99269F74C40006C798 /* ContentView.swift */,
+				4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,8 +465,8 @@
 				4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */,
 				4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */,
 				4F233A9F26AE555E0046FD91 /* finish.wav in Resources */,
+				4FF19BDB26B4640A00281549 /* Colors.xcassets in Resources */,
 				4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */,
-				4F317FE026B0663900E5E1F3 /* india.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +477,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8CB26A26B4A5C2002B6FCD /* PositiveMessage.swift in Sources */,
 				4F233AAB26AE65580046FD91 /* GameTime.swift in Sources */,
+				4F8CB26F26B4DB66002B6FCD /* AnswerTabContent.swift in Sources */,
 				4F233AC226AE6D040046FD91 /* DarkBackground.swift in Sources */,
 				4F86A1B826B094A90050C91D /* StatePercent.swift in Sources */,
 				4F5292FC26AF05DD00AD6C8A /* Settings.swift in Sources */,
@@ -419,10 +488,13 @@
 				4F2AF96D26A2269F00470F84 /* Stats.swift in Sources */,
 				4F233AB626AE69050046FD91 /* StateData.swift in Sources */,
 				4F86A1BE26B09A7A0050C91D /* NoDataView.swift in Sources */,
+				4F8CB26826B4A510002B6FCD /* Languages.swift in Sources */,
 				4F86A1B626B093DB0050C91D /* isPreview.swift in Sources */,
+				4F8CB26C26B4A5FD002B6FCD /* NextButton.swift in Sources */,
 				4F2AF95926A09A2D00470F84 /* Color.swift in Sources */,
 				4F233AA926AE644E0046FD91 /* TimeView.swift in Sources */,
 				4F2AF96326A0B1BB00470F84 /* Success.swift in Sources */,
+				4FF19BDF26B4710600281549 /* StatusBarController.swift in Sources */,
 				4F233ABC26AE6A4E0046FD91 /* States.swift in Sources */,
 				4F86A1BA26B094E90050C91D /* DataStore.swift in Sources */,
 				4F2AF96726A11A8D00470F84 /* Done.swift in Sources */,
@@ -430,21 +502,25 @@
 				4F86A1C026B09BB10050C91D /* viewIf.swift in Sources */,
 				4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */,
 				4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */,
+				4F8CB27126B4E87B002B6FCD /* StandardXButton.swift in Sources */,
 				4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */,
 				4F233AB226AE67DC0046FD91 /* IndiaLanguage.swift in Sources */,
-				4F2AF97226A2439D00470F84 /* PlayerView.swift in Sources */,
+				4F2AF97226A2439D00470F84 /* LoopingPlayerView.swift in Sources */,
 				4F233ABA26AE69170046FD91 /* License.swift in Sources */,
 				4F86A1C226B09C3E0050C91D /* boolOSChecks.swift in Sources */,
 				4F233AC426AE70330046FD91 /* String.swift in Sources */,
+				4F8CB26226B49CAF002B6FCD /* CapitalView.swift in Sources */,
 				4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */,
 				4F233ABE26AE6B270046FD91 /* DoneBar.swift in Sources */,
 				4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */,
+				4F8CB26626B4A3CA002B6FCD /* StateImage.swift in Sources */,
 				4F233AB826AE690C0046FD91 /* InImage.swift in Sources */,
+				4F8CB26426B49DC8002B6FCD /* LanguageView.swift in Sources */,
 				4F233AA126AE55820046FD91 /* SoundPlayer.swift in Sources */,
 				4F2AF96526A0BB6400470F84 /* Entry.swift in Sources */,
 				4F355ADE269FC8B7009126EA /* InState.swift in Sources */,
 				4F2AF96B26A2229200470F84 /* SettingsKey.swift in Sources */,
-				4F355AE226A09311009126EA /* Answer.swift in Sources */,
+				4F355AE226A09311009126EA /* AnswersForState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,7 +646,7 @@
 		4FD60EA4269F74C60006C798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,16 +662,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4FD60EA5269F74C60006C798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,9 +687,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

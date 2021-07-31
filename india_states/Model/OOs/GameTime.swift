@@ -21,7 +21,7 @@ func getTimeString(startTime: Date, endTime: Date) -> String {
   return "\(minutes):\(secondsString)"
 }
 
-class Time: ObservableObject {
+class GameTime: ObservableObject {
   @Published var time: Date = Date()
   @Published var startTime: Date = Date()
   

@@ -5,6 +5,8 @@
 //  Created by Nate Brown on 7/15/21.
 //
 
+/// Allows us to easily color views with custom colors defined in our assets
+
 import SwiftUI
 
 extension Color {

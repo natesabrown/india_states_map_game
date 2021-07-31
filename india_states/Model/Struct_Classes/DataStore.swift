@@ -65,4 +65,30 @@ class DataStore {
     //  print(bestTime)
     return bestTime
   }
+  
+  func setBestTime(time: GameTime) {
+    let currentTime = Int(time.time.timeIntervalSince(time.startTime))
+    let previousTime = UserDefaults.standard.integer(forKey: SettingsKey.BEST_TIME)
+    if previousTime == 0 {
+      UserDefaults.standard.setValue(currentTime, forKey: SettingsKey.BEST_TIME)
+    } else {
+      if currentTime < previousTime {
+        UserDefaults.standard.setValue(currentTime, forKey: SettingsKey.BEST_TIME)
+      }
+    }
+  }
+  
+  func setStateData(for state: InState, rightOnFirstTry: Bool) {
+    var stateData: StateData? = nil
+    if let data = UserDefaults.standard.value(forKey: "\(state.img_id)_data") as? Data {
+      stateData = try? PropertyListDecoder().decode(StateData.self, from: data) }
+    if stateData == nil {
+      stateData = StateData(img_id: state.img_id, correct: 0, incorrect: 0)
+    }
+    guard var stateData = stateData else { return }
+    
+    if rightOnFirstTry { stateData.correct += 1 } else { stateData.incorrect += 1 }
+    
+    UserDefaults.standard.setValue(try? PropertyListEncoder().encode(stateData), forKey: "\(state.img_id)_data")
+  }
 }

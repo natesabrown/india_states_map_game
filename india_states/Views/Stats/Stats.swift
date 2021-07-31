@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Stats: View {
+  @Environment(\.presentationMode) var presentationMode
   @State var statePercents = DataStore.shared.getStatePercents()
   @State var bestTime = DataStore.shared.loadTime()
   
@@ -23,10 +24,14 @@ struct Stats: View {
         } else {
           
           if Bool(.isMac) {
-            Text("Stats")
-              .font(.largeTitle)
-              .bold()
-              .padding(.bottom)
+            HStack(alignment: .top) {
+              Text("Stats")
+                .font(.largeTitle)
+                .bold()
+                .padding(.bottom)
+              Spacer()
+              Button(action: { presentationMode.wrappedValue.dismiss() }) { StandardXButton() }
+            }
           }
           
           DataElement(
@@ -51,8 +56,8 @@ struct Stats: View {
             }
             .padding()
           }
-          .if(.isIpad) { view in
-            view.frame(maxHeight: 400)
+          .if (.isIpad || .isMac) { view in
+            view.frame(maxHeight: .isIpad ? 400 : 500)
           }
           .background(
             LinearGradient(
@@ -72,7 +77,7 @@ struct Stats: View {
       }
       .frame(maxWidth: .infinity, maxHeight: .infinity)
       .if(.isMac) { view in
-        view.frame(maxWidth: 1000, maxHeight: 1000)
+        view.frame(maxWidth: 600)
       }
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
