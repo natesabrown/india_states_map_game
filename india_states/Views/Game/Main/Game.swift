@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Game: View {
   /// the order of states in which the user will play this quiz. it resets every time you play the game!
-  @State var stateCollection = InState.generateStatesList(testing: true)
+  @State var stateCollection = InState.generateStatesList()
   /// the current "index" at the stateCollection that the user is at in the game
   @State var stateIndex = 0
   /// holds the current state the user is looking at
@@ -171,7 +171,7 @@ struct Game: View {
     } else { resetCore() }
     
     func resetCore() {
-      stateCollection = InState.generateStatesList(testing: true)
+      stateCollection = InState.generateStatesList()
       stateIndex = 0
       currentState = stateCollection[0]
       showSuccess = false
