@@ -111,7 +111,7 @@
 		4F8CB27026B4E87B002B6FCD /* StandardXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardXButton.swift; sourceTree = "<group>"; };
 		4FA374D726AF54250019D079 /* OverflowScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowScroll.swift; sourceTree = "<group>"; };
 		4FA374D926AFADAA0019D079 /* india_states.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = india_states.entitlements; sourceTree = "<group>"; };
-		4FD60E94269F74C40006C798 /* india_states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = india_states.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD60E94269F74C40006C798 /* India States Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "India States Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD60E97269F74C40006C798 /* india_statesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = india_statesApp.swift; sourceTree = "<group>"; };
 		4FD60E99269F74C40006C798 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FD60E9B269F74C60006C798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 		4FD60E95269F74C40006C798 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FD60E94269F74C40006C798 /* india_states.app */,
+				4FD60E94269F74C40006C798 /* India States Quiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,7 +408,7 @@
 			packageProductDependencies = (
 			);
 			productName = india_states;
-			productReference = 4FD60E94269F74C40006C798 /* india_states.app */;
+			productReference = 4FD60E94269F74C40006C798 /* India States Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -655,7 +655,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "India States Quiz";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,7 +681,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.natesabrown.india-states";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "India States Quiz";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
