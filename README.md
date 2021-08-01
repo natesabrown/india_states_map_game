@@ -12,8 +12,22 @@ My goal was to make an intuitive, modern, and fun game to facilitate the learnin
 ## Features
 
 * **The Game**. The core experience which shows a highlighted state and some options the user can press. When the right state is hit, the user is presented with a "success" screen, showing them interesting state information and prompting them to continue. After all states have been completed, a "done" screen is shown, with statistics on how many states they got right on their 1st–4th try and the time they took to answer for all 36 states/union territories. They're then prompted as to whether they'd like to be done, or restart.
+
+<p align="center">
+<img src="https://githubimagesnatesabrown.s3.amazonaws.com/IMG_1604.PNG" height="400" align="center"/>
+</p>
+
 * **User Statistics**. The user can see their best time for game completion as well as the percent correct for first try for each individual state.
+
+<p align="center">
+<img src="https://githubimagesnatesabrown.s3.amazonaws.com/IMG_1605.PNG" height="400" align="center"/>
+</p>
+
 * **Settings**. Modular settings screen with the option to toggle volume on/off and a rate button. Features can be easily added.
+
+<p align="center">
+<img src="https://githubimagesnatesabrown.s3.amazonaws.com/IMG_67E339D9F34C-1.jpeg" height="400" align="center"/>
+</p>
 
 ## Design Decisions
 
