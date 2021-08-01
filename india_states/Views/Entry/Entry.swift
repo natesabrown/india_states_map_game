@@ -90,7 +90,8 @@ struct SettingsButton: View {
         Button(action: onButtonPress) {
           Image(systemName: "gearshape.fill")
             .font(.system(size: 35))
-            .foregroundColor(Color(.systemGray4))
+            .foregroundColor(Color.white)
+            .brightness(-0.2)
             .padding() } }
       Spacer()
     }
