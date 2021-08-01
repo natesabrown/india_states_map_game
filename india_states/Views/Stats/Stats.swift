@@ -18,22 +18,21 @@ struct Stats: View {
     let noStateData = statePercents.count == 0
     
     VStack {
+      if Bool(.isMac) {
+        HStack(alignment: .top) {
+          Text("Stats")
+            .font(.largeTitle)
+            .bold()
+            .padding(.bottom)
+          Spacer()
+          Button(action: { presentationMode.wrappedValue.dismiss() }) { StandardXButton() }
+        }
+      }
+      
       VStack(alignment: .leading) {
         if noStateData {
           NoDataView()
         } else {
-          
-          if Bool(.isMac) {
-            HStack(alignment: .top) {
-              Text("Stats")
-                .font(.largeTitle)
-                .bold()
-                .padding(.bottom)
-              Spacer()
-              Button(action: { presentationMode.wrappedValue.dismiss() }) { StandardXButton() }
-            }
-          }
-          
           DataElement(
             text: Text("\(Image(systemName: "clock")) Best Time:"),
             result: timeString)
