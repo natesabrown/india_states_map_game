@@ -42,7 +42,6 @@
 		4F86A1BE26B09A7A0050C91D /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1BD26B09A7A0050C91D /* NoDataView.swift */; };
 		4F86A1C026B09BB10050C91D /* viewIf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1BF26B09BB10050C91D /* viewIf.swift */; };
 		4F86A1C226B09C3E0050C91D /* boolOSChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C126B09C3E0050C91D /* boolOSChecks.swift */; };
-		4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */; };
 		4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86A1C526B0AB670050C91D /* Gradients.swift */; };
 		4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */; };
 		4F8CB26226B49CAF002B6FCD /* CapitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CB26126B49CAF002B6FCD /* CapitalView.swift */; };
@@ -59,8 +58,9 @@
 		4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9B269F74C60006C798 /* Assets.xcassets */; };
 		4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */; };
 		4FF19BD726B1DC9100281549 /* flagpng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF19BD626B1DC9100281549 /* flagpng.png */; };
-		4FF19BDB26B4640A00281549 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF19BDA26B4640A00281549 /* Colors.xcassets */; };
 		4FF19BDF26B4710600281549 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF19BDE26B4710600281549 /* StatusBarController.swift */; };
+		C208209726B7193000C35639 /* defaultPreviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C208209626B7193000C35639 /* defaultPreviewStyle.swift */; };
+		C208209926B719D300C35639 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C208209826B719D300C35639 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +99,6 @@
 		4F86A1BD26B09A7A0050C91D /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		4F86A1BF26B09BB10050C91D /* viewIf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewIf.swift; sourceTree = "<group>"; };
 		4F86A1C126B09C3E0050C91D /* boolOSChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boolOSChecks.swift; sourceTree = "<group>"; };
-		4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultPreviewStyle.swift; sourceTree = "<group>"; };
 		4F86A1C526B0AB670050C91D /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		4F86A1C726B0B5B50050C91D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4F8CB26126B49CAF002B6FCD /* CapitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalView.swift; sourceTree = "<group>"; };
@@ -119,8 +118,9 @@
 		4FD60E9E269F74C60006C798 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FD60EA0269F74C60006C798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FF19BD626B1DC9100281549 /* flagpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagpng.png; sourceTree = "<group>"; };
-		4FF19BDA26B4640A00281549 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4FF19BDE26B4710600281549 /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		C208209626B7193000C35639 /* defaultPreviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultPreviewStyle.swift; sourceTree = "<group>"; };
+		C208209826B719D300C35639 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +230,7 @@
 			children = (
 				4F233AC126AE6D040046FD91 /* DarkBackground.swift */,
 				4FA374D726AF54250019D079 /* OverflowScroll.swift */,
-				4F86A1C326B0AAE60050C91D /* defaultPreviewStyle.swift */,
+				C208209626B7193000C35639 /* defaultPreviewStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 				4F2AF96E26A23FF300470F84 /* Videos */,
 				4F2AF95C26A09B6500470F84 /* HTML */,
 				4FF19BDC26B4644600281549 /* Images */,
-				4FF19BDA26B4640A00281549 /* Colors.xcassets */,
+				C208209826B719D300C35639 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -452,13 +452,13 @@
 			files = (
 				4F233A9D26AE55290046FD91 /* correct.wav in Resources */,
 				4FD60E9F269F74C60006C798 /* Preview Assets.xcassets in Resources */,
+				C208209926B719D300C35639 /* Colors.xcassets in Resources */,
 				4FF19BD726B1DC9100281549 /* flagpng.png in Resources */,
 				4FD60E9C269F74C60006C798 /* Assets.xcassets in Resources */,
 				4F355AE0269FDE07009126EA /* india.html in Resources */,
 				4F2AF97026A23FF300470F84 /* india_montage.mp4 in Resources */,
 				4F4F2BF026A3384B00B336A2 /* States.xcassets in Resources */,
 				4F233A9F26AE555E0046FD91 /* finish.wav in Resources */,
-				4FF19BDB26B4640A00281549 /* Colors.xcassets in Resources */,
 				4F86A1C826B0B5B50050C91D /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +494,7 @@
 				4F2AF96926A11D0A00470F84 /* SingleAxisGeometryReader.swift in Sources */,
 				4F86A1C026B09BB10050C91D /* viewIf.swift in Sources */,
 				4F2AF95E26A0A6F400470F84 /* Game.swift in Sources */,
+				C208209726B7193000C35639 /* defaultPreviewStyle.swift in Sources */,
 				4FD60E9A269F74C40006C798 /* ContentView.swift in Sources */,
 				4F8CB27126B4E87B002B6FCD /* StandardXButton.swift in Sources */,
 				4FD60E98269F74C40006C798 /* india_statesApp.swift in Sources */,
@@ -505,7 +506,6 @@
 				4F8CB26226B49CAF002B6FCD /* CapitalView.swift in Sources */,
 				4F86A1C626B0AB670050C91D /* Gradients.swift in Sources */,
 				4F233ABE26AE6B270046FD91 /* DoneBar.swift in Sources */,
-				4F86A1C426B0AAE60050C91D /* defaultPreviewStyle.swift in Sources */,
 				4F8CB26626B4A3CA002B6FCD /* StateImage.swift in Sources */,
 				4F233AB826AE690C0046FD91 /* InImage.swift in Sources */,
 				4F8CB26426B49DC8002B6FCD /* LanguageView.swift in Sources */,
@@ -642,6 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
@@ -667,6 +668,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = india_states/india_states.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"india_states/Preview Content\"";
