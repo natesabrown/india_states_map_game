@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -435,9 +435,6 @@
 			);
 			mainGroup = 4FD60E8B269F74C40006C798;
 			packageReferences = (
-				4F2AF95F26A0AD0800470F84 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				4F4F2BEC26A328A300B336A2 /* XCRemoteSwiftPackageReference "WikipediaKit" */,
-				4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */,
 			);
 			productRefGroup = 4FD60E95269F74C40006C798 /* Products */;
 			projectDirPath = "";
@@ -711,33 +708,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4F2AF95F26A0AD0800470F84 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.3;
-			};
-		};
-		4F4F2BEC26A328A300B336A2 /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Raureif/WikipediaKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.3;
-			};
-		};
-		4F5292FD26AF0C5400AD6C8A /* XCRemoteSwiftPackageReference "ScreenCorners" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kylebshr/ScreenCorners";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4FD60E8C269F74C40006C798 /* Project object */;
 }
